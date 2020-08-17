@@ -8,5 +8,5 @@ Service have a database with different activities for kids, which are help to de
 User gives range of free hours on the current day and the service prepare different possible activities with kids. Each activity have tips for parents, usefull links and approximate time duaration.
 ## Feature application functions
 In future release web application can store information about your kids on your private space. You can access to it by creating an account with user name and password. 
-User can also save documents, events, weekly activity outside of home
+User can also save documents, events, weekly activity outside of the home.
 
