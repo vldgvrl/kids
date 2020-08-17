@@ -1,0 +1,2 @@
+# kids
+Project on Django
