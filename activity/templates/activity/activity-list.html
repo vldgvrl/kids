@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'activity/style.css' %}">
+    <title>Choose activity</title>
+  </head>
+  <body>
+    <h2>Tips for day activity with kids:</h2>
+    {% if show_all %}
+            {% for item in show_all %}
+            <div class="row">
+                <!-- <div class="time_box">{{item.date|time}}</div> -->
+                <div class="time_box">7:00</div> 
+                    <div class="activity_item">
+                        <ul>
+                            <h4>Choose what you like more:</h4>
+                            {% for option in show_all %}
+                            <li>
+                                <a href="/activity/{{ item.id }}/">{{ option.title }}</a>
+                                <p>{{ option.duaration}} min</p>
+                            </li>
+                            {% endfor%}
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            {% endfor %}
+    {% else %}
+        <p>No items are avaliable</p>
+    {% endif %}
+  </body>
+</html>

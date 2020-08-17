@@ -1,0 +1,17 @@
+.row {
+    display: flex;
+    max-width: 500px;
+    box-shadow: 1px 1px 5px #aaaaaa;
+    padding: 20px 40px;  
+    margin: 15px;
+}
+
+.time_box {
+    font-size: 40px;
+    color: darkblue;
+    min-width: 150px;
+}
+
+.activity_item {
+    margin-left: 40px;
+}
